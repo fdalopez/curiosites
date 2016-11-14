@@ -5,7 +5,8 @@ source 'http://rubygems.org'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
 
-group :development, :test do #pour development et test
+#pour development et test
+group :development, :test do
   gem 'sqlite3'
 end
 
