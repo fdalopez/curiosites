@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
-  get 'articles', to: 'articles#index'
+
+  get 'articles', to: 'articles#index' # get 'nomurl' , to: 'nomcontroller#nomméthode ----fda'
   get 'article/:id', to: 'articles#show'
-  root 'articles#index'
+  get 'film/:id', to: 'films#show'
+  get 'films', to: 'home#index' #page d'accueil
+
+
+
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

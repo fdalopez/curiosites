@@ -1,3 +1,5 @@
-<h1>Mi test pagina web</h1>
-<p>Hola! ¿qué tal amigos?</p>
-<p>Vamos a divertirnos con Thomas</p>
+<%@titres.each do | titre | %>
+
+<h1><%= link_to titre, 'film/1' %></h1>
+
+<% end %>
